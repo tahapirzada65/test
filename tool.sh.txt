@@ -1,0 +1,414 @@
+#!/bin/bash
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+# HIDAPI
+sudo -H -u sspwr bash -c 'make -C build hidapi.distclean'
+sudo -H -u sspwr bash -c 'make -C build hidapi'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/hidapi" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/hidapi  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/hidapi*.rpm ${LOCAL_RPMS}/RPMS/hidapi
+cd /home/chesbuild/rpmbuild/RPMS
+
+# Check if galileo-2 exist or not
+if [ ! -d "${LOCAL_RPMS}/BUILD/galileo-2" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2  
+fi
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/hidapi" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/hidapi  
+fi
+
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/hidapi/hidapi-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/hidapi/* ${LOCAL_RPMS}/BUILD/galileo-2/hidapi/hidapi-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n################"
+printf "\n End of hidapi\n"
+printf "################\n\n"
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+# Ingenicotranslationlibrary
+sudo -H -u sspwr bash -c 'make -C build ingenicotranslationlibrary.distclean'
+sudo -H -u sspwr bash -c 'make -C build ingenicotranslationlibrary'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/ingenicotranslationlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/ingenicotranslationlibrary  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/ingenicotranslationlibrary*.rpm ${LOCAL_RPMS}/RPMS/ingenicotranslationlibrary
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/ingenicotranslationlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/ingenicotranslationlibrary  
+fi
+
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/ingenicotranslationlibrary/ingenicotranslationlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/ingenicotranslationlibrary ${LOCAL_RPMS}/BUILD/galileo-2/ingenicotranslationlibrary/ingenicotranslationlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n####################################"
+printf "\n End of ingenicotranslationlibrary\n"
+printf "####################################\n\n"
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# Kiosk3Library
+sudo -H -u sspwr bash -c 'make -C build Kiosk3Library.distclean'
+sudo -H -u sspwr bash -c 'make -C build Kiosk3Library'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/Kiosk3Library" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/Kiosk3Library  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/Kiosk3Library*.rpm ${LOCAL_RPMS}/RPMS/Kiosk3Library
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/Kiosk3Library" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/Kiosk3Library  
+fi
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/Kiosk3Library/Kiosk3Library-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/Kiosk3Library/* ${LOCAL_RPMS}/BUILD/galileo-2/Kiosk3Library/Kiosk3Library-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n####################"
+printf "\n End of Kiosk3Library\n"
+printf "####################\n\n"
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# Kiosk3TranslationLibrary
+sudo -H -u sspwr bash -c 'make -C build Kiosk3TranslationLibrary.distclean'
+sudo -H -u sspwr bash -c 'make -C build Kiosk3TranslationLibrary'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/Kiosk3TranslationLibrary" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/Kiosk3TranslationLibrary  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/Kiosk3TranslationLibrary*.rpm ${LOCAL_RPMS}/RPMS/Kiosk3TranslationLibrary
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/Kiosk3TranslationLibrary" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/Kiosk3TranslationLibrary  
+fi
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/Kiosk3TranslationLibrary/Kiosk3TranslationLibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/Kiosk3TranslationLibrary/* ${LOCAL_RPMS}/BUILD/galileo-2/Kiosk3TranslationLibrary/Kiosk3TranslationLibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n###################################"
+printf "\n End of Kiosk3TranslationLibrary\n"
+printf "###################################\n\n"
+
+
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# llapi
+sudo -H -u sspwr bash -c 'make -C build llapi.distclean'
+sudo -H -u sspwr bash -c 'make -C build llapi'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/llapi" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/llapi  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/llapi*.rpm ${LOCAL_RPMS}/RPMS/llapi
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/llapi" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/llapi  
+fi
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/llapi/llapi-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/llapi/* ${LOCAL_RPMS}/BUILD/galileo-2/llapi/llapi-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n####################"
+printf "\n End of llapi\n"
+printf "####################\n\n"
+
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# nritranslationlibrary
+sudo -H -u sspwr bash -c 'make -C build nritranslationlibrary.distclean'
+sudo -H -u sspwr bash -c 'make -C build nritranslationlibrary'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/nritranslationlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/nritranslationlibrary  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/nritranslationlibrary*.rpm ${LOCAL_RPMS}/RPMS/nritranslationlibrary
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/nritranslationlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/nritranslationlibrary  
+fi
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/nritranslationlibrary/nritranslationlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/nritranslationlibrary/* ${LOCAL_RPMS}/BUILD/galileo-2/nritranslationlibrary/nritranslationlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n##############################"
+printf "\n End of nritranslationlibrary\n"
+printf "##############################\n\n"
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# nv9translationlibrary
+sudo -H -u sspwr bash -c 'make -C build nv9translationlibrary.distclean'
+sudo -H -u sspwr bash -c 'make -C build nv9translationlibrary'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/nv9translationlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/nv9translationlibrary  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/nv9translationlibrary*.rpm ${LOCAL_RPMS}/RPMS/nv9translationlibrary
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/nv9translationlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/nv9translationlibrary  
+fi
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/nv9translationlibrary/nv9translationlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/nv9translationlibrary/* ${LOCAL_RPMS}/BUILD/galileo-2/nv9translationlibrary/nv9translationlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n##############################"
+printf "\n End of nritranslationlibrary\n"
+printf "##############################\n\n"
+
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# secureheadmsrlibrary
+sudo -H -u sspwr bash -c 'make -C build secureheadmsrlibrary.distclean'
+sudo -H -u sspwr bash -c 'make -C build secureheadmsrlibrary'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/secureheadmsrlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/secureheadmsrlibrary  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/secureheadmsrlibrary*.rpm ${LOCAL_RPMS}/RPMS/secureheadmsrlibrary
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/secureheadmsrlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/secureheadmsrlibrary  
+fi
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/secureheadmsrlibrary/secureheadmsrlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/secureheadmsrlibrary/* ${LOCAL_RPMS}/BUILD/galileo-2/secureheadmsrlibrary/secureheadmsrlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n##############################"
+printf "\n End of secureheadmsrlibrary\n"
+printf "##############################\n\n"
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# secureheadtranslationlibrary
+sudo -H -u sspwr bash -c 'make -C build secureheadtranslationlibrary.distclean'
+sudo -H -u sspwr bash -c 'make -C build secureheadtranslationlibrary'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/secureheadtranslationlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/secureheadtranslationlibrary  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/secureheadtranslationlibrary*.rpm ${LOCAL_RPMS}/RPMS/secureheadtranslationlibrary
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/secureheadtranslationlibrary" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/secureheadtranslationlibrary  
+fi
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/secureheadtranslationlibrary/secureheadtranslationlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/secureheadtranslationlibrary/* ${LOCAL_RPMS}/BUILD/galileo-2/secureheadtranslationlibrary/secureheadtranslationlibrary-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n####################################"
+printf "\n End of secureheadtranslationlibrary\n"
+printf "####################################\n\n"
+
+
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# HLAPI
+sudo -H -u sspwr bash -c 'make -C build hlapi.distclean'
+sudo -H -u sspwr bash -c 'make -C build hlapi'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/hlapi" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/hlapi  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/hlapi*.rpm ${LOCAL_RPMS}/RPMS/hlapi
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/hlapi" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/hlapi  
+fi
+
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/hlapi/hlapi-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/hlapi/* ${LOCAL_RPMS}/BUILD/galileo-2/hlapi/hlapi-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n##################"
+printf "\n End of hlapi\n"
+printf "##################\n\n"
+
+
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# hlapitestapp
+sudo -H -u sspwr bash -c 'make -C build hlapitestapp.distclean'
+sudo -H -u sspwr bash -c 'make -C build hlapitestapp'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/hlapitestapp" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/hlapitestapp  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/hlapitestapp*.rpm ${LOCAL_RPMS}/RPMS/hlapitestapp
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/hlapitestapp" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/hlapitestapp  
+fi
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/hlapitestapp/hlapitestapp-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/hlapitestapp/* ${LOCAL_RPMS}/BUILD/galileo-2/hlapitestapp/hlapitestapp-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n#####################"
+printf "\n End of hlapitestapp\n"
+printf "#####################\n\n"
+
+
+
+
+
+cd "/media/sspwr/wrbuildsata3/Project/SunsetPass/galileo-2"
+
+
+# llapitestapp
+sudo -H -u sspwr bash -c 'make -C build llapitestapp.distclean'
+sudo -H -u sspwr bash -c 'make -C build llapitestapp'
+
+# Check if Directory exists or not
+if [ ! -d "${LOCAL_RPMS}/RPMS/llapitestapp" ]; then
+    mkdir ${LOCAL_RPMS}/RPMS/llapitestapp  
+fi
+
+# Copy some RPM files into the RPM workspace
+cp ${RPMS}/llapitestapp*.rpm ${LOCAL_RPMS}/RPMS/llapitestapp
+cd /home/chesbuild/rpmbuild/RPMS
+
+if [ ! -d "mkdir ${LOCAL_RPMS}/BUILD/galileo-2/llapitestapp" ]; then
+    mkdir ${LOCAL_RPMS}/BUILD/galileo-2/llapitestapp  
+fi
+
+mkdir ${LOCAL_RPMS}/BUILD/galileo-2/llapitestapp/llapitestapp-${RELEASE_VERSION}-$BUILD_NUMBER
+cp ${LOCAL_RPMS}/RPMS/llapitestapp/* ${LOCAL_RPMS}/BUILD/galileo-2/llapitestapp/llapitestapp-${RELEASE_VERSION}-$BUILD_NUMBER
+
+printf "\n\n#####################"
+printf "\n End of llapitestapp\n"
+printf "#####################\n\n"
+
+
+
+
+
+
+# Deploy Artifacts to the Artifactory Server
+
+cd ${LOCAL_RPMS}/BUILD
+tar -cvf Sources.tar galileo-2/*
+echo "Deploying Artifacts to ${ARTIFACT_URL}"
+
+curl -v --user chesbuild:es_build123 --data-binary @/home/chesbuild/rpmbuild/BUILD/Sources.tar -X PUT "${ARTIFACT_URL}/${REPO_NAME}/Sources.tar" 
+
+
+printf "\n\n####################"
+printf "\n Artifacts Deployed \n"
+printf "####################\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

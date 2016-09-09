@@ -1,0 +1,9 @@
+Host git-gar-1.devtools.intel.com
+     HostkeyAlgorithms +ssh-dss
+Host git-amr-1.devtools.intel.com
+     HostkeyAlgorithms +ssh-dss
+#    PubKeyAcceptedKeyTypes=+dsa
+Host git-amr-3.devtools.intel.com
+     HostkeyAlgorithms +ssh-dss
+Host git-get-5.devtools.intel.com
+     HostKeyAlgorithms +ssh-dss

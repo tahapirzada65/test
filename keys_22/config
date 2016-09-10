@@ -1,0 +1,10 @@
+Host bitbucket.org
+	IdentityFile ~/.ssh/id_rsa
+	ProxyCommand connect -S proxy-us.intel.com:1080 %h %p
+
+Host git-gar-1.devtools.intel.com
+	#HostkeyAlgorithms ssh-dss
+	
+Host git-amr-2.devtools.intel.com
+	#HostkeyAlgorithms ssh-dss
+Host git-amr-3.devtools.intel.com
